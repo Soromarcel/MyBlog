@@ -1,0 +1,22 @@
+<div class="container">
+<h2 *ngIf="immos && immos.length > 0">{{title}}</h2>
+
+<button type="button" class="btn btn-success">Success</button>
+
+<div class="card" style="width: 18rem">
+  <div class="col mb-4" *ngFor="let immo of immos">
+    <div class="card">
+  <img src="{{immo.imageUrl}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{immo.immoName}}</h5>
+    <p class="card-text">
+      {{immo.decription}}
+    </p>
+    <button type="button" class="btn btn-success">Success</button>
+
+    
+  </div>
+  </div>
+  </div>
+</div>
+</div>

@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
 @Component({
-    selector: 'app-liste-des-immo',
-    templateUrl: './liste-des-immo.component.html',
+    selector: 'app-liste-des-amis',
+    templateUrl: './liste-des-amis.component.html',
     styleUrls: []
 })
-
-export class ListeDesImmoComponent {
-    public title = 'Blog des Immobiliers';
-
-    public immobilliers: any[] = [
+   export class ListeDesAmisComponent {
+    public title = 'ImmoBlog';
+    
+    public immos: any[] = [
         {
             immoId: 1,
             immoName: 'Immeuble Kassa',
@@ -46,5 +45,5 @@ export class ListeDesImmoComponent {
             imageUrl: 'assets/img/5.jpg'
         }
     ];
-   
 }
+
